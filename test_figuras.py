@@ -46,6 +46,10 @@ class TestFiguras(unittest.TestCase):
 		resultado = self.figuras.rectangulo(5.1,7.9)
 		self.assertEqual(40.29, resultado)
 
+	def test_area_rectangulo_base_neg1_altura_7(self):
+		resultado = self.figuras.rectangulo(-1,7)
+		self.assertEqual('no hay distancias negativas', resultado)
+
 	def test_area_triangulo_base_5_altura_7(self):
 		resultado = self.figuras.triangulo(5,7)
 		self.assertEqual(17.5, resultado)
