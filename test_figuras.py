@@ -26,6 +26,10 @@ class TestFiguras(unittest.TestCase):
 		resultado = self.figuras.cuadrado(0)
 		self.assertEqual(0, resultado)
 
+	def test_area_cuadrado_lado_12(self):
+		resultado = self.figuras.cuadrado(12)
+		self.assertEqual(144, resultado)
+
 	def test_area_cuadrado_lado_neg1(self):
 		resultado = self.figuras.cuadrado(-1)
 		self.assertEqual('no hay distancias negativas', resultado)
